@@ -1,7 +1,6 @@
-package edu.ucne.romel_ortega_ap2_p2.domain.model
+package edu.ucne.romel_ortega_ap2_p2.data.remote.dto
 
-data class Model(
-    val gastoId: Int,
+data class GastoRequest(
     val fecha: String,
     val suplidor: String,
     val ncf: String,

@@ -1,0 +1,11 @@
+package edu.ucne.romel_ortega_ap2_p2.domain.usecase
+
+import edu.ucne.romel_ortega_ap2_p2.data.remote.dto.GastoRequest
+import edu.ucne.romel_ortega_ap2_p2.domain.repository.Repository
+import javax.inject.Inject
+
+class CreateGastosUseCase @Inject constructor(
+    private val repository: Repository
+) {
+    suspend operator fun invoke(gasto: GastoRequest) = repository.createGasto(gasto)
+}

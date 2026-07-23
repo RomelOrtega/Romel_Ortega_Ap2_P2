@@ -17,7 +17,7 @@ android {
 
     defaultConfig {
         applicationId = "edu.ucne.romel_ortega_ap2_p2"
-        minSdk = 24
+        minSdk = 26
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
@@ -74,6 +74,7 @@ dependencies {
     // Lifecycle
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation(libs.androidx.lifecycle.runtime.compose)
+    implementation(libs.androidx.lifecycle.viewmodel.navigation3)
 
     // Navigation Compose (needed for our NavHost)
     implementation(libs.androidx.navigation3.runtime)

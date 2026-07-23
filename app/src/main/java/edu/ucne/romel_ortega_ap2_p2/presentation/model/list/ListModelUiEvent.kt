@@ -1,4 +1,5 @@
 package edu.ucne.romel_ortega_ap2_p2.presentation.model.list
 
-class ListModelUiEvent {
+sealed interface ListModelUiEvent {
+    data object Recargar : ListModelUiEvent
 }
